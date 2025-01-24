@@ -43,7 +43,7 @@ function sortearAmigo() {
     let indiceNombre =0;
         do {
             indiceNombre = Math.floor(Math.random() * amigos.length);
-        } while (amigosSorteados.includes(indice)); 
+        } while (amigosSorteados.includes(indiceNombre)); 
         document.getElementById('resultado').textContent = `El nombre sorteado es: ${amigos[indiceNombre]}`;
         amigosSorteados.push(indiceNombre);
         console.log(amigosSorteados)
