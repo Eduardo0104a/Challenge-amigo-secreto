@@ -41,12 +41,12 @@ function sortearAmigo() {
     }
     
     let indiceNombre =0;
-        do {
-            indiceNombre = Math.floor(Math.random() * amigos.length);
-        } while (amigosSorteados.includes(indiceNombre)); 
-        document.getElementById('resultado').textContent = `El nombre sorteado es: ${amigos[indiceNombre]}`;
-        amigosSorteados.push(indiceNombre);
-        console.log(amigosSorteados)
+    do {
+        indiceNombre = Math.floor(Math.random() * amigos.length);
+    } while (amigosSorteados.includes(indiceNombre)); 
+    
+    document.getElementById('resultado').textContent = `El nombre sorteado es: ${amigos[indiceNombre]}`;
+    amigosSorteados.push(indiceNombre);
 
     if(amigos.length === 0){
         alert('No se puede realizar el sorteo');
